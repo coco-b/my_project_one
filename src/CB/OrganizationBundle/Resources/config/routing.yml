@@ -2,9 +2,14 @@ cb_organization_homepage:
     path:     /
     defaults: { _controller: CBOrganizationBundle:index }
 
+
+
 cb_organization_view:
     path:   /veille/{id}
     defaults: { _controller: CBOrganizationBundle:Veille:view }
     requirements:
     id: \d+
 
+hello_the_world:
+    path:    /hello-world
+    default: { _controller: OrganisationBundle:Veille:index }

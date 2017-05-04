@@ -2,6 +2,5 @@ cb_organization:
     resource: "@CBOrganizationBundle/Resources/config/routing.yml"
     prefix:   /
 
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+
+
