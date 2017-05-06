@@ -1,6 +1,5 @@
 cb_organization:
     resource: "@CBOrganizationBundle/Resources/config/routing.yml"
-    prefix:   /
-
+    prefix:   / veille
 
 

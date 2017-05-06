@@ -1,25 +1,21 @@
 <?php
 
 //src/CB/OrganizationBundle/VeilleController.php
-namespace CB\organizationBundle\Controller;
+namespace CB\OrganizationBundle\Controller;
 
 
 
 
+use CB\OrganizationBundle\CBOrganizationBundle;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 class VeilleController extends Controller
 {
     public function indexAction()
     {
-        return new Response("Bonjour le monde");
+        $content = $this->get('templating')->render('@CBOrganizationBundle/veille.html.twig');
+        return new Response($content);
     }
-// on injecte la requête dans les argument de la methode
-    public function viewAction($id, Request $request)
-    {
-        // on recupere notre parametre tag
-        $tag = $request->query->get('tag');
 
-        return new Response("Affichage de la view d'id : ".$id. "avec le tag :)");
-    }
 }
