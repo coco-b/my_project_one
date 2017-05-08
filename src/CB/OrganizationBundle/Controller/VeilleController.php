@@ -15,7 +15,9 @@ class VeilleController extends Controller
 {
     public function viewAction($id)
     {
+
         return new Response("affichage de l'annonce d'id : " .$id);
+
     }
 
     public function indexAction()
