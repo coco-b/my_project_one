@@ -12,7 +12,7 @@ class VeilleController extends Controller
 {
     public function indexAction()
     {
-        return new Response("Bonjour le monde");
+        return new Response("Bonjour le monde inconnu");
     }
 // on injecte la requête dans les argument de la methode
     public function viewAction($id, Request $request)
