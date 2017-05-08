@@ -1,3 +1,8 @@
 cb_organization:
     path: /
     defaults: { _controller: CBOrganization:Veille:index }
+
+cb_organization_view:
+    path: /veille/{id}
+    defaults: { _controller: CBOrganizationBundle:Veille:view }
+

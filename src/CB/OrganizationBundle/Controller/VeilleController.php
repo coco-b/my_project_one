@@ -13,6 +13,11 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class VeilleController extends Controller
 {
+    public function viewAction($id)
+    {
+        return new Response("affichage de l'annonce d'id : " .$id);
+    }
+
     public function indexAction()
     {
         $content = $this->get('templating')->render('@CBOrganizationBundle/veille.html.twig');
@@ -20,3 +25,4 @@ class VeilleController extends Controller
     }
 
 }
+
