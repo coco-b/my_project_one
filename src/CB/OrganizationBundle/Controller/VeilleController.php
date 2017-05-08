@@ -9,6 +9,7 @@ namespace CB\OrganizationBundle\Controller;
 use CB\OrganizationBundle\CBOrganizationBundle;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class VeilleController extends Controller
 {
